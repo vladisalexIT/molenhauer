@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body class="page-body">
     <svg display="none">
         <symbol id="search-icon" viewBox="0 0 14 18">
             <g>
@@ -19,51 +19,102 @@
     </svg>
 
     <div class="overlay"></div>
-    <header class="header">
-        <div class="header__top container">
-            <div class="header__logo logo">
-                <img src="./images/logo.svg" alt="Molenhauer logo" width="263" height="46">
+    <div class="page-body__wrapper">
+        <header class="header">
+            <div class="header__top container">
+                <div class="header__logo logo">
+                    <img src="./images/logo.svg" alt="Molenhauer logo" width="263" height="46">
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-link">Services</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-link">Know How</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-link">Projects & References</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-link">Our Company</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-link">Our Clients</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-link">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__action">
+                    <button type="button" class="header__contact-btn button contact-btn">Contact Us</button>
+                    <ul class="header__lang-list lang list-reset" aria-label="select language">
+                        <li class="header__lang-item">
+                            <button type="button" class="header__lang-btn" data-lang="de" aria-label="select German language">
+                                <img src="./icons/lang-de.svg" alt="de" width="12" height="12">
+                                <span class="lang__name" aria-hidden="true">
+                                    De.
+                                </span>
+                            </button>
+                        </li>
+                        <li class="header__lang-item">
+                            <button type="button" class="header__lang-btn" data-lang="en" aria-label="select German language">
+                                <img src="./icons/lang-en.svg" alt="en" width="12" height="12">
+                                <span class="lang__name" aria-hidden="true">
+                                    En.
+                                </span>
+                            </button>
+                        </li>
+                        <li class="header__lang-item">
+                            <button type="button" class="header__lang-btn" data-lang="fr" aria-label="select German language">
+                                <img src="./icons/lang-fr.svg" alt="fr" width="12" height="12">
+                                <span class="lang__name" aria-hidden="true">
+                                    Fr.
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="/" class="header__nav-link">Services</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="/" class="header__nav-link">Know How</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="/" class="header__nav-link">Projects & References</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="/" class="header__nav-link">Our Company</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="/" class="header__nav-link">Our Clients</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="/" class="header__nav-link">Careers</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__action">
-                <button class="header__contact-btn contact-btn">Contact Us</button>
-                <ul class="header__lang-list lang list-reset" aria-label="select language">
-                    <li class="header__lang-item">
-                        <button class="header__lang-btn" data-lang="de" aria-label="select German language">
+        </header>
+        <main class="page-body__main">
+            <section class="hero">
+                <div class="hero__inner container">
+                    <div class="hero__content">
+                        <h1 class="hero__title" data-i18n="hero-title">
+                            Civil <strong>Engineering Solutions</strong> For The <strong>Cement</strong> Industry
+                        </h1>
+                        <div class="hero__descr-wrapper">
+                            <p class="hero__descr">
+                                We are your leading partner for complex brownfield
+                                construction projects during ongoing operation.
+                            </p>
+                            <p class="hero__descr">
+                                Benefit from engineering excellence built on<br>
+                                more than 30 years of industry experience.
+                            </p>
+                        </div>
+                        <div class="hero__actions">
+                            <button type="button" class="hero__actions-button button button--transparent">
+                                How can we serve you
+                            </button>
+                            <button type="button" class="hero__actions-button button button--white contact-btn">
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero__decor">
 
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <main class="main">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
 
-    </main>
-    <footer class="footer">
+        </footer>
+    </div>
 
-    </footer>
 
 
 </body>
