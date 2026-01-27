@@ -1204,7 +1204,7 @@ h6 {
 
 
 .benefits__slider-tabs-item:first-child {
-    min-width: 270px;
+    min-width: 273px;
 }
 
 .benefits__slider-tabs-item:first-child .benefits__slider-tabs-button {
@@ -1238,12 +1238,33 @@ h6 {
 
 
 .benefits__slider-tabs-num {
+    position: relative;
+    width: 40px;
+    height: 32px;
     margin-bottom: 20px;
 }
 
 .benefits__slider-tabs-num:before {
     content: counter(thumb-btn, decimal-leading-zero);
-    color: #2f3034;
+    color: #9aa0a6;
+}
+
+.slide-num__icon {
+    position: absolute;
+    top: 17px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    fill: var(--second-color);
+    transition: .2s linear;
+}
+
+.black {
+    color: #2F3034;
+}
+
+.benefits__slider-tabs-button.black.is-active .benefits__slider-tabs-num:before {
+    color: #2F3034;
 }
 
 .benefits__slider-tabs-item:not(:last-child)::after {
@@ -1257,10 +1278,63 @@ h6 {
     background: url(../images/dashed-line.png) right top / auto 100% no-repeat;
 }
 
+.swiper-horizontal {
+
+    .swiper-button-next,
+    .swiper-button-prev,
+    ~.swiper-button-next,
+    ~.swiper-button-prev {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+.benefits__slider-tabs-nav {
+    display: flex;
+    width: 35%;
+    justify-self: start;
+    overflow: hidden;
+}
+
+
+
 .swiper-button-next,
 .swiper-button-prev {
-    position: static;
+    svg {
+        visibility: hidden;
+    }
 }
+
+.slider-nav__btn {
+    position: static;
+    color: #1561d3;
+}
+
+.swiper-button-prev {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 71px;
+    height: 71px;
+    background: url(../icons/slider-arrow-left.svg) center / 8px 14px no-repeat;
+    background-color: #06255B;
+    transition: background-color .2s linear, opacity .2s linear;
+}
+
+.swiper-button-next {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 71px;
+    height: 71px;
+    background: url(../icons/slider-arrow-right.svg) center / 8px 14px no-repeat;
+    background-color: #DA5D24;
+    transition: background-color .2s linear, opacity .2s linear;
+}
+
+
 
 
 

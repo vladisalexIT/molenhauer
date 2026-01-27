@@ -15,7 +15,7 @@ const tabButtons = benefitsSliderEl.querySelectorAll('.benefits__slider-tabs-but
 
 const benefitsSwiper = new Swiper(benefitsSliderEl, {
   slidesPerView: 1,
-  speed: 600,
+  speed: 500,
   loop: true,
   loopedSlides: tabButtons.length,
   navigation: {
@@ -36,6 +36,7 @@ function setActiveTabBenefits(activeIndex) {
   tabButtons.forEach((btn, i) => {
     btn.classList.toggle('is-active', i === activeIndex);
     btn.setAttribute('aria-current', i === activeIndex ? 'true' : 'false');
+    if (btn.hasAttribute('aria-current')) btn.classList.add('black')
   });
 }
 
