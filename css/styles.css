@@ -1335,8 +1335,49 @@ h6 {
 }
 
 
+.footer {
+    padding: 25px 0;
+    background-color: var(--page-color);
+}
 
 
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer__privacy {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.copy-link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.37;
+    letter-spacing: .02em;
+    color: var(--color-white);
+    transition: color .2s linear;
+}
+
+
+.copy-link:hover {
+    color: var(--hover-color);
+}
 
 
 /* media */
+
+@media (max-width: 1890px) {
+    .benefits__slider-tabs {
+        position: static;
+        display: block;
+        align-self: start;
+        width: 100%;
+    }
+
+}
