@@ -542,6 +542,27 @@ h6 {
     column-gap: 16px;
     margin-right: -145px;
     font-size: 15px;
+    flex-shrink: 0;
+    min-width: max-content;
+}
+
+.header__burger-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 45px 15px 30px;
+    background-color: #fff
+}
+
+.header__burger-block {
+    padding: 0;
+    background-color: transparent
+}
+
+.header__burger .header__burger-line {
+    background-color: #fff;
+    height: 4px;
+    border-radius: 3px
 }
 
 .lang {
@@ -1525,7 +1546,6 @@ h6 {
     line-height: 100%;
     color: #000;
     padding-left: 35px;
-    background: url(../img/Arrow-realization-fb5ddd2637.svg) left center/20px 15px no-repeat;
     transition: color .2s linear
 }
 
@@ -1783,72 +1803,68 @@ h6 {
 
 @media (max-width: 1290px) {
     .container {
-        padding: 0 45px
+        padding: 0 45px;
     }
 
     .header__logo {
         margin-left: 0;
-        width: 238px
+        width: 238px;
     }
 
-    .header__right {
-        gap: 1px;
-        margin-right: -45px
+    .header__action {
+        gap: 4px;
+        margin-right: -45px;
+        flex-shrink: 0;
+        min-width: max-content;
     }
 
-    .hero__container {
-        padding: 0 45px
+    .hero__inner {
+        padding: 0 45px;
     }
 
-    .decor-block__list-item {
+    .decor-block__item {
         font-size: .9375rem;
-        letter-spacing: .01em
+        letter-spacing: .01em;
     }
 
-    .decor-block__fon-inner--right .decor-block__fon-images {
+    .decor-block__formula--right .decor-block__formula-image {
         top: 5%;
         left: 5%;
         width: 170px;
-        height: 45px
+        height: 45px;
     }
 
-    .expert-slider {
-        background: url(../img/expertaise-decor-slider-c90fd906d5.png) bottom left no-repeat;
-        margin: 0 -45px
+    .our-expertise__slider {
+        margin: 0 -45px;
     }
 
-    .slider-block__thumbs-wrapper {
-        position: static;
-        margin-bottom: -71px
-    }
-
-    .slider-block__thumbs-slider {
+    .benefits__slider-tabs-list {
         align-self: start;
         width: 100%;
     }
 
-    .main-slider__slide {
-        min-height: 293px
+    .benefits__slider-slide {
+        min-height: 293px;
     }
 
-    .main-slider__content {
-        padding: 160px 0 0 10px
+    .benefits__slider-content {
+        padding: 160px 0 0 10px;
     }
 
-    .thumbs-slider__slide-btn {
-        padding: 12px
+    .benefits__slider-tabs-button {
+        padding: 12px;
     }
 
     .realization__container {
-        grid-template: repeat(2, auto)/repeat(3, 1fr)
+        grid-template: repeat(2, auto)/repeat(3, 1fr);
     }
 
     .realization__articls {
-        grid-column: 1/span 3
+        grid-column: 1/span 3;
     }
 
     .lead-item__name {
-        font-size: 1.75rem
+        font-size: 1.75rem;
     }
 
     .team__grade-block--leaders {
@@ -1856,23 +1872,16 @@ h6 {
         column-gap: 10px
     }
 
-
 }
 
 @media (max-width: 1024px) {
-    .copy-link {
-        font-weight: 400;
-        font-size: .75rem;
-        line-height: 183%;
-        letter-spacing: .03em
-    }
 
     .sub-title,
     .title {
         font-size: 1.875rem
     }
 
-    .descr {
+    .section-descr {
         font-size: 1rem
     }
 
@@ -1886,11 +1895,11 @@ h6 {
         font-size: .875rem
     }
 
-    .nav__list {
+    .header__nav-list {
         flex-direction: column
     }
 
-    .nav__link {
+    .header__nav-link {
         font-weight: 300;
         font-size: 1.75rem;
         line-height: .64;
@@ -1905,12 +1914,11 @@ h6 {
         transform: translateY(0)
     }
 
-    .header__contact-btn,
     .header__nav {
         display: none
     }
 
-    ._lock .header__lang-list {
+    .header__lang-list {
         opacity: 0;
         visibility: hidden
     }
@@ -2877,4 +2885,14 @@ h6 {
         width: 100%;
     }
 
+}
+
+
+@media (max-width: 1290px) {
+    .header__action {
+        gap: 4px;
+        margin-right: -45px;
+        flex-shrink: 0;
+        min-width: max-content;
+    }
 }
