@@ -46,16 +46,75 @@
                             <a href="/" class="header__nav-link lang-key" data-key="navItem6">Careers</a>
                         </li>
                     </ul>
-                    <div class="header__burger-block">
-                        <button class="header__burger btn-reset" id="burger" aria-label="Open menu">
-                            <span class="header__burger-line"></span>
-                            <span class="header__burger-line"></span>
-                            <span class="header__burger-line"></span>
-                        </button>
-                    </div>
                 </nav>
+                <div id="menu-overlay" class="menu-overlay"></div>
+                <div class="header__mobile-menu mobile-menu" id="mobile-menu">
+                    <ul class="mobile-menu__lang-list lang list-reset" aria-label="select language">
+                        <li class="lang__item">
+                            <button type="button" class="header__lang-btn" data-btn="de"
+                                aria-label="select German language">
+                                <img src="./icons/lang-de.svg" alt="de" width="12" height="12">
+                                <span class="lang__name" aria-hidden="true">
+                                    De.
+                                </span>
+                            </button>
+                        </li>
+                        <li class="lang__item">
+                            <button type="button" class="header__lang-btn" data-btn="en"
+                                aria-label="select German language">
+                                <img src="./icons/lang-en.svg" alt="en" width="12" height="12">
+                                <span class="lang__name" aria-hidden="true">
+                                    En.
+                                </span>
+                            </button>
+                        </li>
+                        <li class="lang__item">
+                            <button type="button" class="header__lang-btn" data-btn="fr"
+                                aria-label="select German language">
+                                <img src="./icons/lang-fr.svg" alt="fr" width="12" height="12">
+                                <span class="lang__name" aria-hidden="true">
+                                    Fr.
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="mobile-menu__nav nav">
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link link-reset lang-key" data-key="mobileItem1">Services</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link link-reset lang-key" data-key="mobileItem2">Know How</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link link-reset lang-key" data-key="mobileItem3">Projects & References</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link link-resetlang-key" data-key="mobileItem4">Our Company</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link link-reset lang-key" data-key="mobileItem5">Our
+                                    Clients</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link link-reset lang-key" data-key="mobileItem6">Careers</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-menu__contact-btn contact-btn btn-reset lang-key"
+                                data-key="heroButton2">Contact &nbsp;Us</button>
+                    <div class="mobile-menu__privacy privacy">
+                        <a class="link-reset copy-link copy-link--header lang-key"
+                                data-key="ImprintText">Imprint</a>
+                        <span class="privacy__midle-line"></span>
+                        <a class="link-reset copy-link copy-link--header lang-key"
+                                data-key="DataText" href="#">Data
+                            Privacy</a>
+                    </div>
+                </div>
                 <div class="header__action">
-                    <button type="button" class="header__contact-btn button contact-btn lang-key" data-key="contactButton">Contact Us</button>
+                    <button type="button" class="header__contact-btn button contact-btn lang-key"
+                        data-key="contactButton">Contact Us</button>
                     <ul class="header__lang-list lang list-reset" aria-label="select language">
                         <li class="header__lang-item">
                             <button type="button" class="header__lang-btn" data-btn="de"
@@ -85,6 +144,13 @@
                             </button>
                         </li>
                     </ul>
+                    <div class="header__burger-block">
+                        <button class="header__burger btn-reset" id="burger" aria-label="Open menu">
+                            <span class="header__burger-line"></span>
+                            <span class="header__burger-line"></span>
+                            <span class="header__burger-line"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -106,10 +172,12 @@
                             </p>
                         </div>
                         <div class="hero__actions">
-                            <button type="button" class="hero__actions-button button button--transparent lang-key" data-key="heroButton1">
+                            <button type="button" class="hero__actions-button button button--transparent lang-key"
+                                data-key="heroButton1">
                                 How can we serve you
                             </button>
-                            <button type="button" class="hero__actions-button button button--white contact-btn lang-key" data-key="heroButton2">
+                            <button type="button" class="hero__actions-button button button--white contact-btn lang-key"
+                                data-key="heroButton2">
                                 Contact Us
                             </button>
                         </div>
@@ -869,6 +937,7 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/lang.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
