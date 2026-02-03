@@ -58,7 +58,7 @@
                     <button type="button" class="header__contact-btn button contact-btn">Contact Us</button>
                     <ul class="header__lang-list lang list-reset" aria-label="select language">
                         <li class="header__lang-item">
-                            <button type="button" class="header__lang-btn" data-lang="de"
+                            <button type="button" class="header__lang-btn" data-btn="de"
                                 aria-label="select German language">
                                 <img src="./icons/lang-de.svg" alt="de" width="12" height="12">
                                 <span class="lang__name" aria-hidden="true">
@@ -67,7 +67,7 @@
                             </button>
                         </li>
                         <li class="header__lang-item">
-                            <button type="button" class="header__lang-btn" data-lang="en"
+                            <button type="button" class="header__lang-btn" data-btn="en"
                                 aria-label="select German language">
                                 <img src="./icons/lang-en.svg" alt="en" width="12" height="12">
                                 <span class="lang__name" aria-hidden="true">
@@ -76,7 +76,7 @@
                             </button>
                         </li>
                         <li class="header__lang-item">
-                            <button type="button" class="header__lang-btn" data-lang="fr"
+                            <button type="button" class="header__lang-btn" data-btn="fr"
                                 aria-label="select German language">
                                 <img src="./icons/lang-fr.svg" alt="fr" width="12" height="12">
                                 <span class="lang__name" aria-hidden="true">
@@ -92,15 +92,15 @@
             <section class="hero">
                 <div class="hero__inner container">
                     <div class="hero__content">
-                        <h1 class="hero__title" data-i18n="hero-title">
+                        <h1 class="hero__title lang-key" data-key="heroTitle">
                             Civil <strong>Engineering Solutions</strong> For The <strong>Cement</strong> Industry
                         </h1>
                         <div class="hero__descr-wrapper">
-                            <p class="hero__descr">
+                            <p class="hero__descr lang-key" data-key="heroDescr1">
                                 We are your leading partner for complex brownfield
                                 construction projects during ongoing operation.
                             </p>
-                            <p class="hero__descr">
+                            <p class="hero__descr lang-key" data-key="heroDescr2">
                                 Benefit from engineering excellence built on<br>
                                 more than 30 years of industry experience.
                             </p>
@@ -867,7 +867,8 @@
 
 
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/lang.js"></script>
 </body>
 
 </html>
