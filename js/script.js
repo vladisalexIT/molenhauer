@@ -1,4 +1,3 @@
-
 var swiper = new Swiper(".our-expertise__slider", {
   slidesPerView: 6,
   spaceBetween: 0,
@@ -6,6 +5,20 @@ var swiper = new Swiper(".our-expertise__slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    468: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 6,
+    }
+  }
 });
 
 
