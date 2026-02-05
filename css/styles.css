@@ -633,32 +633,32 @@ h6 {
 }
 
 .menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  z-index: 998;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
 .menu-overlay._active {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 body.menu-open {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 #mobile-menu {
-  z-index: 999;
+    z-index: 999;
 }
 
 .header__mobile-menu {
@@ -1884,6 +1884,117 @@ body.menu-open {
     display: none !important
 }
 
+.location {
+    max-width: 1728px;
+    min-height: 400px;
+    margin-inline: auto;
+    background-image: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.location__container {
+    position: relative;
+}
+
+.balloon {
+    align-items: start;
+    display: flex;
+    -moz-column-gap: 70px;
+    column-gap: 70px;
+    padding: 25px 0 0 75px;
+    background-color: #fff;
+}
+
+.location__balloon {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    z-index: 2;
+}
+
+.location__map-wrapper {
+    position: relative;
+    z-index: -100;
+}
+
+.location__map {
+    min-height: 560px
+}
+
+.balloon__address-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px;
+    max-width: 140px;
+}
+
+.balloon__address {
+    font-style: normal;
+    font-size: .9375rem;
+    line-height: 150%;
+    color: #313131;
+}
+
+.balloon__address-text {
+    margin: 0;
+}
+
+.balloon__phones {
+    margin-bottom: 16px;
+}
+
+.balloon__logo {
+    padding: 0;
+    fill: var(--page-color);
+    transition: fill .2s linear;
+}
+
+.balloon__phone-item {
+    text-decoration: none;
+    color: inherit;
+    transition: color .2s linear;
+}
+
+.balloon__address-wrapper>:last-child {
+    margin-bottom: 0;
+}
+
+.balloon__email {
+    color: #ff7c40;
+    transition: color .2s linear;
+}
+
+.balloon__title {
+    font-weight: 700;
+    font-size: inherit;
+    margin-bottom: 27px;
+}
+
+.balloon__social-block {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 30px 0;
+    border-top: 1px solid rgba(255, 124, 64, .23);
+}
+
+.balloon__social-title {
+    margin-right: 28px;
+    font-weight: 700;
+    font-size: inherit;
+}
+
+.balloon__social-link {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.balloon__social-block>* {
+    margin-right: 16px;
+}
 
 
 .footer {
@@ -1987,6 +2098,10 @@ body.menu-open {
     .team__grade-block--leaders {
         -moz-column-gap: 10px;
         column-gap: 10px
+    }
+
+    .location {
+        min-height: 350px;
     }
 
 }
@@ -2451,6 +2566,59 @@ body.menu-open {
         height: 66px;
     }
 
+    .balloon {
+        max-width: 365px;
+        -moz-column-gap: 55px;
+        column-gap: 55px;
+        padding: 20px 0 0 45px;
+    }
+
+    .balloon__address {
+        font-size: .8125rem;
+    }
+
+    .balloon__address-wrapper {
+        max-width: 100%;
+        padding-right: 15px;
+    }
+
+    .balloon__title {
+        font-weight: 600;
+        margin-bottom: 17px;
+    }
+
+    .balloon__social-block {
+        padding: 15px 20px 15px 0;
+    }
+
+    .balloon__social-title {
+        margin-right: 20px;
+        font-weight: 600;
+    }
+
+    .balloon__social-block>* {
+        margin-right: 12px;
+    }
+
+    .balloon__social-block>* {
+        margin-right: 12px;
+    }
+
+    .balloon__title {
+        margin-bottom: 10px;
+    }
+
+    .location__map-wrapper {
+        display: none;
+    }
+
+    .location {
+        min-height: 300px;
+    }
+
+    .location__balloon {
+        margin-block: 10px;
+    }
 
     .footer {
         padding: 15px 0;
@@ -2768,7 +2936,43 @@ body.menu-open {
         height: 20px
     }
 
+    .location__balloon {
+        position: static;
+    }
 
+    .balloon {
+        top: auto;
+        bottom: 30px;
+        padding: 20px 25px 20px 15px;
+        max-width: 235px;
+    }
+
+    .location__balloon {
+        top: auto;
+        bottom: 30px;
+    }
+
+    .balloon__logo {
+        display: none
+    }
+
+    .balloon__address-wrapper {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .balloon__social-block {
+        padding: 0;
+        border-top: none;
+    }
+
+    .balloon__title {
+        margin-bottom: 5px;
+    }
+
+    .location {
+        min-height: 200px;
+    }
 
     .footer__container {
         flex-direction: column;
